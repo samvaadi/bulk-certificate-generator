@@ -119,6 +119,8 @@ All names and addresses in these scenarios are fictional. The faulty recipient's
 The automated API suite now contains ten tests and covers job creation and polling, invalid recipients and empty batches, failure isolation, generated PDF bytes, individual PDF and ZIP downloads, CSV ingestion, rate limiting, and bounded concurrency.
 
 ## Reviewer Evaluation Guide
+   testing instructions https://drive.google.com/file/d/1eAqRfHZkZJnWmKH7N__seL46HfwWmRtH/view?usp=sharing
+   project guide and documentation  https://drive.google.com/file/d/1RUlmvCWz6RIGMCxF1QOTdhUEQ4MmyJUe/view?usp=sharing
 
 ### Install and run the test suite
 
