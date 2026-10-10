@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Certificate</title>
+    <style>
+        @page { size: A4 landscape; margin: 0; }
+        body { margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f8fafc; color: #1e293b; }
+        .cert-outer-border { width: 1000px; height: 680px; margin: 20px auto; padding: 20px; background: #ffffff; border: 12px solid #0f172a; box-sizing: border-box; }
+        .cert-inner-border { width: 100%; height: 100%; border: 2px solid #cbd5e1; padding: 40px 60px; box-sizing: border-box; text-align: center; }
+        .header-title { font-size: 38px; font-weight: 700; letter-spacing: 4px; color: #0f172a; text-transform: uppercase; margin-top: 10px; }
+        .subtitle { font-size: 16px; letter-spacing: 2px; color: #64748b; text-transform: uppercase; margin-bottom: 30px; }
+        .recipient-name { font-size: 38px; font-weight: 800; color: #1e3a8a; border-bottom: 2px solid #e2e8f0; display: inline-block; padding-bottom: 8px; margin-bottom: 20px; min-width: 400px; }
+        .description-text { font-size: 16px; line-height: 1.6; color: #334155; max-width: 700px; margin: 0 auto 20px auto; }
+        .highlight { font-weight: 600; color: #0f172a; }
+        .metadata-badge { display: inline-block; background-color: #f1f5f9; border: 1px solid #cbd5e1; padding: 6px 16px; border-radius: 4px; font-size: 14px; font-weight: 600; color: #334155; margin-top: 10px; }
+        .footer-table { width: 100%; margin-top: 50px; border-collapse: collapse; }
+        .footer-cell { width: 50%; vertical-align: bottom; font-size: 14px; color: #475569; }
+        .signature-line { width: 200px; border-top: 1px solid #94a3b8; margin: 0 auto 8px auto; }
+    </style>
+</head>
+<body>
+    <div class="cert-outer-border">
+        <div class="cert-inner-border">
+            <div class="header-title">{{ metadata.certificate_title if metadata and metadata.certificate_title else "Certificate of Completion" }}</div>
+            <div class="subtitle">This is officially presented to</div>
+            <div class="recipient-name">{{ recipient_name }}</div>
+            <div class="description-text">For successful participation and demonstrating excellence in <span class="highlight">{{ event_name }}</span>.</div>
+            {% if metadata and metadata.grade %}<div class="metadata-badge">Grade / Result: {{ metadata.grade }}</div>{% endif %}
+            <table class="footer-table"><tr>
+                <td class="footer-cell" style="text-align: left;"><strong>Date of Issue:</strong> {{ issue_date if issue_date else "N/A" }}<br><strong>Verification ID:</strong> {{ recipient_id }}</td>
+                <td class="footer-cell" style="text-align: right;"><div class="signature-line"></div><strong>Authorized Signatory</strong><br><span>{{ metadata.issuer_name if metadata and metadata.issuer_name else "Program Director" }}</span></td>
+            </tr></table>
+        </div>
+    </div>
+</body>
+</html>
