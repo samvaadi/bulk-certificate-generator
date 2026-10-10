@@ -20,6 +20,8 @@ def test_invalid_payloads_return_422(client, payload):
     assert client.post("/api/v1/jobs", json=payload).status_code == 422
     payload["recipients"] = [{"recipient_name": "A", "recipient_email": "bad-email"}]
     assert client.post("/api/v1/jobs", json=payload).status_code == 422
+    payload["recipients"] = [{"recipient_name": "", "recipient_email": "valid@example.com"}]
+    assert client.post("/api/v1/jobs", json=payload).status_code == 422
 
 
 def test_failure_is_isolated(client, payload, monkeypatch):
@@ -46,6 +48,7 @@ def test_failure_is_isolated(client, payload, monkeypatch):
     status = client.get(f"/api/v1/jobs/{job_id}").json()
     assert status["status"] == "PARTIALLY_COMPLETED"
     assert status["completed_count"] == 2 and status["failed_count"] == 1
+    assert status["progress_percentage"] == 100
     failed = next(r for r in status["recipients"] if r["recipient_name"] == "Grace Hopper")
     assert failed["error_message"] == "render failed"
 

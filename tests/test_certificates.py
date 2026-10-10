@@ -1,3 +1,18 @@
+from app.services.generator import CertificateGeneratorService
+
+
+def test_certificate_generation_returns_pdf_bytes():
+    pdf = CertificateGeneratorService().generate(
+        event_name="Test Event",
+        issue_date="2026-10-10",
+        recipient_id="verification-id",
+        recipient_name="Taylor Example",
+        metadata={"grade": "A", "issuer_name": "Test Organization"},
+    )
+    assert pdf.startswith(b"%PDF-")
+    assert len(pdf) > 500
+
+
 def test_individual_and_bulk_download(client, payload):
     result = client.post("/api/v1/jobs", json=payload)
     job_id = result.json()["job_id"]

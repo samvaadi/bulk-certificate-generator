@@ -1,0 +1,415 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<<
+/Producer (ReportLab PDF Library \055 \050opensource\051)
+/Author (\050anonymous\051)
+/CreationDate (D\07220261010192937\05305\04700\047)
+/Creator (\050unspecified\051)
+/Keywords ()
+/ModDate (D\07220261010192937\05305\04700\047)
+/Subject (\050unspecified\051)
+/Title (Bulk Certificate Generator Automated Testing Guide)
+/Trapped (\057False)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 3
+/Kids [ 4 0 R 11 0 R 14 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F2-0 9 0 R
+/F3 10 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 3178
+>>
+stream
+q
+1 0 0 1 0 0 cm
+BT
+/F1 12 Tf
+14.4 TL
+ET
+q
+0.847059 0.878431 0.909804 RG
+n
+44.64 36 m
+567.36 36 l
+S
+BT
+/F1 7.5 Tf
+9 TL
+ET
+0.392157 0.454902 0.545098 rg
+BT
+1 0 0 1 46.8 23.04 Tm
+(Bulk Certificate Generator \174 Testing Guide) Tj
+T*
+ET
+BT
+1 0 0 1 541.4325 23.04 Tm
+(Page 1) Tj
+T*
+ET
+Q
+q
+1 0 0 1 45.6 741.36 cm
+Q
+q
+1 0 0 1 45.6 714.36 cm
+q
+0.086275 0.227451 0.388235 rg
+BT
+1 0 0 1 0 5 Tm
+/F2 22 Tf
+27 TL
+124.088 0 Td
+(Bulk Certificate Generator) Tj
+T*
+-124.088 0 Td
+ET
+Q
+Q
+q
+1 0 0 1 45.6 692.36 cm
+q
+0.32549 0.396078 0.47451 rg
+BT
+1 0 0 1 0 3.5 Tm
+/F1 9.5 Tf
+13 TL
+187.2642 0 Td
+(Updated Automated Testing Guide) Tj
+T*
+-187.2642 0 Td
+ET
+Q
+Q
+q
+1 0 0 1 45.6 659.36 cm
+q
+0.086275 0.227451 0.388235 rg
+BT
+1 0 0 1 0 3 Tm
+/F2 14 Tf
+17 TL
+(Purpose and test environment) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 45.6 630.36 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 14.4 Tm
+/F1 8.6 Tf
+11.5 TL
+(This guide gives copyable PowerShell commands and expected results for the current test suite\056 Tests call the FastAPI app through) Tj
+T*
+(TestClient and use isolated in\055memory SQLite plus temporary file storage\056 Do not start Uvicorn for pytest\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 45.6 606.36 cm
+q
+0.086275 0.227451 0.388235 rg
+BT
+1 0 0 1 0 3 Tm
+/F2 14 Tf
+17 TL
+(Setup) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 45.6 563.56 cm
+q
+0.847059 0.878431 0.909804 RG
+0.4 w
+0.945098 0.960784 0.976471 rg
+n
+30 -6 496.8 48.8 re
+B*
+Q
+q
+BT
+1 0 0 1 36 29.6 Tm
+9.2 TL
+/F3 7.2 Tf
+0 0 0 rg
+(cd C\072\134path\134to\134bulk\055certificate\055generator) Tj
+T*
+(python \055m venv \056venv) Tj
+T*
+(\056\134\056venv\134Scripts\134Activate\056ps1) Tj
+T*
+(python \055m pip install \055r requirements\056txt) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 45.6 546.06 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 2.9 Tm
+/F1 8.6 Tf
+11.5 TL
+(If activation is blocked\072 Set\055ExecutionPolicy \055Scope Process \055ExecutionPolicy Bypass\054 then run \056\134\056venv\134Scripts\134Activate\056ps1\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 45.6 522.06 cm
+q
+0.086275 0.227451 0.388235 rg
+BT
+1 0 0 1 0 3 Tm
+/F2 14 Tf
+17 TL
+(Run all tests with coverage) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 45.6 506.86 cm
+q
+0.847059 0.878431 0.909804 RG
+0.4 w
+0.945098 0.960784 0.976471 rg
+n
+30 -6 496.8 21.2 re
+B*
+Q
+q
+0 0 0 rg
+BT
+1 0 0 1 36 2 Tm
+/F3 7.2 Tf
+9.2 TL
+(pytest \055\055cov\075app) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 45.6 477.86 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 14.4 Tm
+/F1 8.6 Tf
+11.5 TL
+(Expected\072 10 passed\056 A Starlette\057httpx deprecation warning may be displayed depending on dependency versions\073 it is not a test failure\056) Tj
+T*
+(Latest observed app coverage was 94\045\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 45.6 453.86 cm
+q
+0.086275 0.227451 0.388235 rg
+BT
+1 0 0 1 0 3 Tm
+/F2 14 Tf
+17 TL
+(Run a single required test) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 45.6 420.26 cm
+q
+0.847059 0.878431 0.909804 RG
+0.4 w
+0.945098 0.960784 0.976471 rg
+n
+30 -6 496.8 39.6 re
+B*
+Q
+q
+BT
+1 0 0 1 36 20.4 Tm
+9.2 TL
+/F3 7.2 Tf
+0 0 0 rg
+(python \055m pytest \055q tests\057test\137enhancements\056py\072\072test\137csv\137upload\137job\137creation) Tj
+T*
+(python \055m pytest \055q tests\057test\137enhancements\056py\072\072test\137rate\137limiting\137trigger) Tj
+T*
+(python \055m pytest \055q tests\057test\137enhancements\056py\072\072test\137concurrency\137guard\137execution) Tj
+T*
+ET
+Q
+Q
+Q
+
+endstream
+endobj
+6 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+9 0 obj
+<<
+/BaseFont /Courier
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+10 0 obj
+<<
+/BaseFont /Courier
+/Encoding /WinAnsiEncoding
+/Name /F3
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+11 0 obj
+<<
+/Contents 12 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font 13 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+12 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Length 1885
+>>
+stream
+GatU4gJ[&k&:N^lqIQ_5;aK(,]m+!/YfnjiL:DDMT;I:D,T;%Lfab6o+29D\ED2*4<DE_WaDIn\Vb^Z1'+Ff+qE%:M5)+$"D1Y>&S:bMh)o=\(KI8u[Li7Wp'*.PchmQ3$JJ%[3%1bBF);$ieD6R89_/VVi5O^=Wfh&fI7i\pEd&oj>J=;K'`-1L_TKjLO_::e'e-*+ca``LOe0:h:9O[Ru:7gC,b=]uI`$u6U4QDT)\V0u*jCKXC"l.TOk.a:Y"2YR@;f=\:2Ml9JVmk`O/ND,6j'Qf$SU-($i)'l%;;4$WQ[0,Q8j1qFm9@;#/SE7;"!"`<feir5+f(^`Z>YrB6"(VJ86H:dXQ1\3/;D8>_4un.nA*4.WQMV'VnG+EY[:)14W@6]A6aj&W"n6SG$kmhVe/1FO<!C):.X;?F9&o#2p`f7qIUX'E'cXg))UrH+8BPnY1[8t[a:$b*TX_bK@@2iL;(3XQ\doWLi#\7p>J?5bC#$370bQhfc)%+Ta9#Ea(W$.MRnBqi%I3m/!4I+2,QRt:0$KB]WP)qQD/9)2t.[p$&3/0UB>]C5OuknpmH\kK\E?D,j#S"e,*8RT4[h)i)s#Pi%(C!0R^'hW;'RLT?:_OBVo!aENAG7akE2GjH1hnc6s4=IZ/sp1X&9%nH,s[L[!mCea8\BUiKW!=inu5_.4bKo)A7QDA#^I`aEr_Pr6i;bB]ZF[*Jd%_i/dJqc56[1##@8`_F>c:"#b^KalgI86I^oAVtTj.20f?0C"[YV>QE.N\H)S9=3\kXcf@<<@tNiCeFGqlhCSR8$>lC\mRLJYjE*B+O(sP(*el^I\5gPLjBgZee#.=">>rTQ50cK_a:Y'Yo6mfJpf$Y+($NL2J'j<e\pZie#Ve5*L$CIilD,?0]5ek[Ef@_))93_=iIDP.<gKi(DqG0'fBkGY%sIR#ujP-enN0JLiN[/9"k+"@12[Gh>J%.AjMr"kiDDsYt>qLmDIO0aF4B_VVZ/*Mj9*6Q=*N<(3ZLB@qaJ7G=4B/Rg(K.BZgkLOnOqEe^>k7haeN&p`hF!]Iu$JkR7;k@R56L<O=mLJ0TT;ct7*S):!nYpLBRs4G:0[GBa(7msNXIrHCjGL5J5/bs`u%h8VM6S*U(>R+-dl:^XpG].8j6d;WYuq/_k_/;?kRgCs]0PSb+eA49.r3gBJr>Ce6$/%HcV)&,N6!5OhH<lFTNGZ=)/QJc+Im(qSUK3QOP?V&Cp3\qbU#S'#EJF+]DBC+eMTsCiLV[Db".CCm3G>j0EX@kgBQ)j)\,GXZ45j$CJqP#4YHeT=`*[d1Y%"__6!Iq'o_[N!`.Fr7]_)4i1`NX.2h3pE5=U1D(h0DGC7Nta8h'R'NB=N[6AhJ`A'3B`]lNUD/JSJgPNQF9d9]$C-)Nie=!C%"%j'"ui)"7g]ZpWL:e+9_2;YG6=;R!?NfL&lKb<1\tM.IoXKgj6sHlsJbG"6ZZDNA9B/"at=pn'5=rr2<aiQoW`$jouWYYJ8h=P2FL[NR?OU/1"?F^n7>6iL2.\O+gMB2@iJ&Z]'a_["XhB?`tYc4#aqZL+AYh0.`:F0WNT'>n<dBCDPi$3,LF&2.u3cNiH6%Lm6eWjB12hPUoIK0T**mV."RDas$"8u=PW^2LZpB=rM-rP\SK1oL1FVFPEiM>hZ[=Yo>R*^pc)R3$K+gVP#CPNbplU["+B-e"iu/9$]GCQT[>-(`in5nDNZgV`ZmQKUWD1V[S8*]+Me7?n2irM,DXp$Gf0r7]6+^AIcGopT(ZX2Had;,UulQBB<@p#\YB<CP"@#uiK&k=D[ei7X9)&PmPZ?oBDf+g/??W:]:II=L]K<0H7+i9<QbYJPB]7um:=+jDd)HF'@!Rc>2^>eQ+@>>0a7rrIY+k-=~>
+endstream
+endobj
+13 0 obj
+<<
+/F1 6 0 R
+/F2 8 0 R
+/F3 10 0 R
+>>
+endobj
+14 0 obj
+<<
+/Contents 15 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font 13 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+15 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Length 1606
+>>
+stream
+Gatm:?#SIU'Re<2\A2G!_IiFSg$-tkX_iT1b?>V_L&_<-dkP'`<(SNQLAgn<93[;&Nu78="L2EuQhR"kcb58d_G;0N<XmGZ8LMhoMA%Jk'PAVbnq)<>O$4P?Gud?/K#G<hB5(%K&M<-B7^$/=)9O]hb:&oY6i!epGee5lDiT#2$B]DF`@dTM(J1,5,dKO:6j\]4b7T`h2/e:p3Ft!$V^*!:Uho8iXKUO1:Wdg+XXi'RHD-:<ZEoSjTi1\]Rqm>tl]lc_jZ=rank"2engkPZRcJf=0BKU9FDq!D!'20nM]!7$$=4Qu1nQ'_:*N8e/-l)p5#9W)PE[<73Uk/^KT\T/;D@/O8?s4Rb7u&4P,=T(VG]lED+U02SLIKS)X6,-le_C[U$;QjOPORFbne:-jd-JQ`EA9^j>Z/,P[1[?5@dgJVEoA9q"[%)Gmp+L3IJM.:e8&c@^22$/7oJpi3Se^7Edb18gBeM-sHi%A!)jOFS7P](PVH%,!gW'>::r#.r`2[%tJB_\rAR(D5]g%GgQY5IgrX[!BbW_i;(g3dEWJ$W9ZH%0T.[;2i_MC#j'`RCBctf-]98aPfD7Y22\d*PhE4<n*o3r<HW$[]Omu[(\(\o\p*H)ab8Y%RY2$)-W,P%<2EfYh-SHR8%24q,5le98^#tlC-;51A3bD+i==B4eQ$b\)h2uVW8+=gaQXP)>]3/[S47\dQ+K=W9H\WZ\!iD`*D)KK=mKiK\"Z?@e4nhV"*>m]Yrr"aM7tN6TH&?"i(s]B5,Ma4(138eR2M%di?*C5^oM!l%'*=]$I\ouGn(,h?.rNEhJ?.se#bMYH].[5PHLYjJXAo4WFo%QGb"u/_op3e[QAmW8j8.;.0#dMo(elf*dT;I[D:#397-(FLns&Qk`6b4OEr=^HdD?bCn2a&[W%frVg+j`b,i$l2/W\h`^%XYJ[XA/P>MY6hAm^g4eVU\^+Di8aS3kIGFkA7B=A2T[]\:iSZYfuST9^%MaQf*D(XJY]\*#)0'W;s#m++lo)<1_AltrAJQ+4*&-$kX1TgRumr%[,Y=J'L>F&ISFrLS_eoLBOVdOWr]peYtT&?"MS8rOf2_od.ksj@?4(-Dt9"pq,$Q2"D%JnXZ"4J[M.J%c#*+F`2[6fL51D<3#%m.fp!M*X0jiN&BV+"4`QS#B@`l8t%_2R\;HKN:JUSJ.4%1DifHEYt-%8">+lF*8*^`$?Sh]8@8/*>h1a8VEP<p=G86s&5IbI<Z;Vl%GnK."dUhR1Y\"R!!)kht6rf;LT(/hr6$pp)/_Pdq*BC4hsD]@s[$^maING%bN(CAPNj/[mB^c/UTR,7%LF-<="pX7q!Y_E!VL*j?tn]*gYlnfTms`^NTrCCP&F(XJh^(a8UQLL>9eCTPGKRZ&h]k9R.hHd'%LnBG:0YQ;F?+\?jY2Ub,Qf%j2Jc]2FT,58Kfj/)743KS$*c("-b&bI&EansYM;D]jsE`11cLQW+qcSb?<fAjZ_0GWZWiNj]lmHY.UgpT'kEN%BMkdr4mY;XT@!,8"cmLcg-C'>g`EQCZDSS]WZ0*6p`_1.LX)gE*E!bA9r2Ti:OJ-O#%Vr7oG"!V-lJ/,D/3:^!mFS%5(KQ+m~>
+endstream
+endobj
+xref
+0 16
+0000000000 65535 f 
+0000000015 00000 n 
+0000000377 00000 n 
+0000000450 00000 n 
+0000000499 00000 n 
+0000000755 00000 n 
+0000003985 00000 n 
+0000004092 00000 n 
+0000004199 00000 n 
+0000004311 00000 n 
+0000004416 00000 n 
+0000004522 00000 n 
+0000004714 00000 n 
+0000006692 00000 n 
+0000006745 00000 n 
+0000006937 00000 n 
+trailer
+<<
+/Size 16
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+8636
+%%EOF

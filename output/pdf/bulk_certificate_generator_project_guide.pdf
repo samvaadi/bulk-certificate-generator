@@ -1,0 +1,484 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<<
+/Producer (ReportLab PDF Library \055 \050opensource\051)
+/Author (\050anonymous\051)
+/CreationDate (D\07220261010192937\05305\04700\047)
+/Creator (\050unspecified\051)
+/Keywords ()
+/ModDate (D\07220261010192937\05305\04700\047)
+/Subject (\050unspecified\051)
+/Title (Bulk Certificate Generator Project Guide)
+/Trapped (\057False)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 3
+/Kids [ 4 0 R 11 0 R 14 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F2-0 9 0 R
+/F3 10 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 4776
+>>
+stream
+q
+1 0 0 1 0 0 cm
+BT
+/F1 12 Tf
+14.4 TL
+ET
+q
+0.847059 0.878431 0.909804 RG
+n
+44.64 36 m
+567.36 36 l
+S
+BT
+/F1 7.5 Tf
+9 TL
+ET
+0.392157 0.454902 0.545098 rg
+BT
+1 0 0 1 46.8 23.04 Tm
+(Bulk Certificate Generator \174 Project Guide) Tj
+T*
+ET
+BT
+1 0 0 1 541.4325 23.04 Tm
+(Page 1) Tj
+T*
+ET
+Q
+q
+1 0 0 1 50.64 735.6 cm
+Q
+q
+1 0 0 1 50.64 708.6 cm
+q
+0.086275 0.227451 0.388235 rg
+BT
+1 0 0 1 0 5 Tm
+/F2 22 Tf
+27 TL
+119.048 0 Td
+(Bulk Certificate Generator) Tj
+T*
+-119.048 0 Td
+ET
+Q
+Q
+q
+1 0 0 1 50.64 686.6 cm
+q
+0.32549 0.396078 0.47451 rg
+BT
+1 0 0 1 0 3.5 Tm
+/F1 9.5 Tf
+13 TL
+138.396 0 Td
+(Updated Project Setup\054 API\054 Testing\054 and Design Guide) Tj
+T*
+-138.396 0 Td
+ET
+Q
+Q
+q
+1 0 0 1 50.64 653.6 cm
+q
+0.086275 0.227451 0.388235 rg
+BT
+1 0 0 1 0 3 Tm
+/F2 14 Tf
+17 TL
+(Overview) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 50.64 613.1 cm
+q
+BT
+1 0 0 1 0 25.9 Tm
+11.5 TL
+/F1 8.6 Tf
+0 0 0 rg
+(This FastAPI service creates certificate\055generation jobs for multiple recipients\054 returns HTTP 202\054 and renders PDFs in a background) Tj
+T*
+(task\056 SQLite stores job and recipient state\073 Jinja2 loads the predefined template\073 ReportLab writes vector PDFs\073 files are kept under) Tj
+T*
+(storage\134certificates\134) Tj
+(\134\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 50.64 589.1 cm
+q
+0.086275 0.227451 0.388235 rg
+BT
+1 0 0 1 0 3 Tm
+/F2 14 Tf
+17 TL
+(Set up the project in PowerShell) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 50.64 546.3 cm
+q
+0.847059 0.878431 0.909804 RG
+0.4 w
+0.945098 0.960784 0.976471 rg
+n
+30 -6 486.72 48.8 re
+B*
+Q
+q
+BT
+1 0 0 1 36 29.6 Tm
+9.2 TL
+/F3 7.2 Tf
+0 0 0 rg
+(cd C\072\134path\134to\134bulk\055certificate\055generator) Tj
+T*
+(python \055m venv \056venv) Tj
+T*
+(\056\134\056venv\134Scripts\134Activate\056ps1) Tj
+T*
+(python \055m pip install \055r requirements\056txt) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 50.64 517.3 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 14.4 Tm
+/F1 8.6 Tf
+11.5 TL
+(If script activation is blocked\054 run Set\055ExecutionPolicy \055Scope Process \055ExecutionPolicy Bypass\054 then activate again\056 Use Python 3\05611) Tj
+T*
+(or later\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 50.64 493.3 cm
+q
+0.086275 0.227451 0.388235 rg
+BT
+1 0 0 1 0 3 Tm
+/F2 14 Tf
+17 TL
+(Run the application) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 50.64 478.1 cm
+q
+0.847059 0.878431 0.909804 RG
+0.4 w
+0.945098 0.960784 0.976471 rg
+n
+30 -6 486.72 21.2 re
+B*
+Q
+q
+0 0 0 rg
+BT
+1 0 0 1 36 2 Tm
+/F3 7.2 Tf
+9.2 TL
+(python \055m uvicorn app\056main\072app \055\055reload) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 50.64 460.6 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 2.9 Tm
+/F1 8.6 Tf
+11.5 TL
+(Keep the server window running\056 Base URL\072 http\072\057\057127\0560\0560\0561\0728000\056 Swagger\072 http\072\057\057127\0560\0560\0561\0728000\057docs\056 Stop the server with Ctrl\053C\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 50.64 442.6 cm
+q
+0.090196 0.419608 0.407843 rg
+BT
+1 0 0 1 0 2.5 Tm
+/F2 10.5 Tf
+13 TL
+(Configuration) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 50.64 402.1 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 25.9 Tm
+/F1 8.6 Tf
+11.5 TL
+(DATABASE\137URL selects the SQLAlchemy database\073 the default is certificates\056db\056 CERTIFICATE\137STORAGE\137DIR changes the PDF) Tj
+T*
+(storage root\056 MAX\137WORKERS controls parallel rendering per job and defaults to 4\056 Example PowerShell setting\072) Tj
+T*
+(\044env\072MAX\137WORKERS \075 \0474\047 before starting Uvicorn\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 50.64 378.1 cm
+q
+0.086275 0.227451 0.388235 rg
+BT
+1 0 0 1 0 3 Tm
+/F2 14 Tf
+17 TL
+(Submit a JSON request) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 50.64 349.1 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 14.4 Tm
+/F1 8.6 Tf
+11.5 TL
+(POST \057api\057v1\057jobs accepts event\137name\054 optional issue\137date\054 and recipients\056 Each recipient needs recipient\137name and a valid) Tj
+T*
+(recipient\137email\073 metadata is optional\056) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 50.64 298.1 cm
+q
+0.847059 0.878431 0.909804 RG
+0.4 w
+0.945098 0.960784 0.976471 rg
+n
+30 -6 486.72 58 re
+B*
+Q
+q
+BT
+1 0 0 1 36 38.8 Tm
+9.2 TL
+/F3 7.2 Tf
+0 0 0 rg
+(\044baseUrl \075 \047http\072\057\057127\0560\0560\0561\0728000\047) Tj
+T*
+-0.032 Tw
+(\044body \075 \100\173 event\137name \075 \047Python Workshop\047\073 issue\137date \075 \0472026\05510\05510\047\073 recipients \075 \100\050\100\173 recipient\137name \075 \047Alex) Tj
+T*
+0 Tw
+(Example\047\073 recipient\137email \075 \047alex\100example\056com\047\073 metadata \075 \100\173 grade \075 \047A\047 \175 \175\051 \175 \174 ConvertTo\055Json \055Depth 8) Tj
+T*
+(\044job \075 Invoke\055RestMethod \055Method Post \055Uri \042\044baseUrl\057api\057v1\057jobs\042 \055ContentType \047application\057json\047 \055Body \044body) Tj
+T*
+(\044job \174 Format\055List) Tj
+T*
+ET
+Q
+Q
+q
+1 0 0 1 50.64 269.1 cm
+q
+0 0 0 rg
+BT
+1 0 0 1 0 14.4 Tm
+/F1 8.6 Tf
+11.5 TL
+(The 202 response includes job\137id\054 status\054 total\137recipients\054 created\137at\054 and status\137check\137url\056 These example names and addresses) Tj
+T*
+(are fictional\056) Tj
+T*
+ET
+Q
+Q
+Q
+
+endstream
+endobj
+6 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+9 0 obj
+<<
+/BaseFont /Courier
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+10 0 obj
+<<
+/BaseFont /Courier
+/Encoding /WinAnsiEncoding
+/Name /F3
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+11 0 obj
+<<
+/Contents 12 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font 13 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+12 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Length 2169
+>>
+stream
+Gb!#[l#5<7'`Xc>iZT_3Um#J_[acQeF#]SG[..sVh$*s&,LJ4ZM,GcPa1D9=HdlIaD%^c#57B8U;rYE=n$9dH5J-h8-3/g"ka^:54"srjm1Bl+B/#]jIG,lnY@mY3OFFD%\MfPb$Mp%nj3oR\Sk$@5\6VY@n+I%d^eYB&XdWUXpmPVfF!GS\fR=?ekBhdA!:`2o\UhEC"Epo2f-Pia>_5;>$1&]KnMM:@WVD(#<&$@DJk;t?$%Ki`VH5<JE*DaemD8E%VD#?Q20Q]H'@1h!23oJ5ahV&krX0XU\o2;PH?Og6#SZS+X5A&G4qPd!Gs6PimIqXQs%7&7I*K9EidasRdHPAG]0:5G!PY*oY^85&'g?/J8g=EbMQ.jZJ;OVmdp&N<k)E!q3a&H>[i0DlpV1J,2B(:U)<Xo8h+AobJEf;eaWiRK0.WGkq;N>"4lTI.D!7(#.E0j\5WPV2$)3#`]Q7S,Y0r6@;cJp*%S76_Sl)IpOideNW[QYC[=e^ER/uZ/#rNMU@?naY9^u*/(eO=Nc1*h>>('L.)DRXI8-K\f"&/irCs:Uu/E@[eR$G<d6@"N6TRBm*+u%U*Jr<8-e$qq:%MpZiO_f.R&uMU.[ZW8lgDm/&E'n-<Q&7%9e<3+XnlBLa)[8Zl'ajMNM5#O_n9/jOT"n0e$oC`^'!tO%+PEZE94YTk/<19%&\>0g#ZUdIVW,0AhZ-u(-nW7khFM=]I>\N@RVNsAKbX%JF?0I6OfK3l;5[5GWjH"<(b;lu(mnREF22baob4hPgsIC*=W-MU[5eQbRo^QIqLMAr3X;7Z;[CM"/J;$jL'1ciDr>iClh,(rVuYGdPQS,H,s;Lg!#<Ep*kj0OY*jj[c*8aK#K5$4G>;BoEb2sDG/J3Se'dhW`&+D+[)]\@Zn>4Ph[a1>#IWe#`PWWq*=,!U(l1g;(m>d:j.I]ES&u#!4fPB_b0pI(A!Z^Z@2s1US(C0ns'WSbci2CBdn\`W\$1rK@<W.(hk2M99;SpqSW<+0LkU?PX1i.JO&_9+>8KU$ZhZ@P@(S!3qkJK@[t'O=]ZujX[f&<s>?pkBbNYJ(KqAf2)T;Mk*hrG;]$K$C@X"i)VsR3`EP,:f^8nDtdQ#gg$[LE?2Mh&&cPC]EIl`-V#@H$SchN"8UG#FY(G*U@J\Ef\PNeoSGs9QA%+.5jLCI'B@AmXue_LeoR;IYsle!.sU0E%;X4tU0(Vu-!`sOm]H,EFYK!rJ-CECgqTE?ZD1p4$q"P^5DQZ`h0Z1(i?d7b:=$-/q6$BEEhNQqaW_6F$9KCO&.E-CsPI-i(Xe!#FCg#/75!TZZdU0<I!rjL"c&o0O^W:'+q"Scap="6Nd=EQn0P;8DEoL"Wkfi2cNcb\-,^Lcklb**oX%/[:-ie$;$J%qB<^<lhRH9'#8(LCl9bkAL"1oa-0%Qe$Dc-.mDiZ5pANPPH73OHG'U>)O4(UJk+Q2i6Jn7K,@1E*nj*kjkp0m8<?kG.SCl$+nMm*,/7&tejd-'^KI)9]gE%@cF^!kW()QVBcOql:if<uO$8+lXhRRt;6)HE>Kh9kCiq2f++5DR]N';<'m#)-6oT'5#rlfl*TMg>[qkrl6=KbWNWgVu.m[lkA_Z4rbU-LuOs3Mt(Y*aZSN;=(&L.WIt&0?&WcX_U)>VH@XD.:pQ[oLf,qQ$[%%t>Cg1Ob[tXQ0HZIe;^@E9HR+Lbg](TD#?A-&SZ8(&p,\1F-B7'1HKF;@%*2d<gXLXV\(@;6nO?>,LQ=BGTnrIQNsZlN)dTLiQtFmIMF2^q4[NP6d/@H6_DsK4MhpJ@_O("4[IaLNbE5$J#`-'4Y4Ykt^`le@4]BuiBQX8F&T51AB*GKDl<aqK%<,Yg>(GHFl5A6\]M56S[G;pgeRNGtbg@gYnMUYq](Y_MH#Dpdcu<,^!Q@L<9&TWb7$OMfB@:hXJ8Z40dc'Rcp=/)6eEs@p"&]hJQ!4UT3nIXW<u4`4(81M$(mcB`NX--03n>n%_bDDT5SC=*77CSsVmco++dRXXlKoVh2&?%A,q6^.S/Pq<fpQgu;V^)'oYsg5J5$(O>:$:r#W]Q6"dTjRB*1X<Z/CrPJi-n5]k5fX#TU,r(V9N:%8pF\Oi?->:&uQQ#:0c%ilW_a!KAV\/X;H)S/*kSFO<i06;c^tQ&'*ZS%JR$5mLWo!(rOHJH~>
+endstream
+endobj
+13 0 obj
+<<
+/F1 6 0 R
+/F2 8 0 R
+/F3 10 0 R
+>>
+endobj
+14 0 obj
+<<
+/Contents 15 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font 13 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+15 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Length 2072
+>>
+stream
+Gb!#[?#SIe&:F5UfU&=M@@]rH'I=]HY[&VIdl*5g2FUK930S">@Znde*A+neO72F4?ZA8_2D9c:La%nhHS`"7X-b+/`Spik-9@XDn6&G)6F0mR;j#Mp8%P'.]K6[g1lnpkM+Km&7koj71n@#`>s1Dc-r%Z?V9tZFb/V!-"o_MDIB_EY(E%-N?0rt.dj34Z&o!Y,UP)%$B%W+0S6q(R3Mg4?Tk#D[A6.1<=]aG,\[#Q!l9]eccW-aAoZ#>:FD9!(<HriHku)psZaVdgQ6Yd5Q_grX7nL.qje\It)XT)*NIu-"7sq0rScXS>Ad"jM36<rh8Woth&/\+gaXDM!F[R,94a`Pl&l;8B54p09PB`%aZ]Yf2b'DgeO6B7p`M/[lmYGCPdeCoKH*be/Ykq0dm_e\:e'Yp)DmW7m:'8T]]u-nR+cj"cHY@dP@%N3h+#"$4So11YE<m-)7#XKdR+Xug2qfq+0,35XlT873C2daQ=uDm^iUslF,0PgNc#$N^+X;#u#2>)4@ICrk34#VBefXA(FW?<e"jX$r$iH:q@bN>/9ZI`Gi%lIQH-E1%BGAj%9^-(=Ef_2t"S(aCgCWmb+@,fqO22+E%jID3#9[\%_iY-**9B98[eif2U4!O=m*fp[arGP!&RV)1)DJMC839bDJ4e87TN8J*O*(?s7g?Mg?J\5NH9$:O"(mD1%TN_g"eDh7cqRA[V/l4GorF^?kL[IH@?pK=1e6jf*T"t3Qi0(Yr;ISYqgo:7>ANA%3Hmm#;HFk=mB]tL*rc/u&hn[5't/ZE\Df#Elb7=)H;I1AR\I,(Ab8NIC^&'c?HU,0E5&!89f`R3<??-.Ni85gWUb]Z#S9lal&\;)i1sh/5os7@/Z#4VqN]^N<]84SCjfG@^+o=Vg"jR5Mk#dY9)nWH\WFd^hO5CpOWIR8N$AWO_.S%-9QfluMN2Osan7.bQ2tGZSc8?GRo`ZE0<VIgAfK)`=S&[o*FQ7Scn,V8=&"OXGj4W9^PjtJ5gtIS;VfJ10r^hH^lf'6YN6$8C+t^<cj>q8-mfI/"V!!b>$j@kV<0k0pCStn\l(h;I0Q2`ms3*cQT"%UQq_g<S'?rWYe6bI-h$.2<6*\"3(LdJKPKSH>O:E-?ckj+c7t-8'Z7JCpPQH1QHZZ!2quC3.+u,\QWlK@Nh^9ljl'h-CA+J9B6u2mdn74FdX(cO?5LVUN0-MY=#L8LQ7gE[g$=?DYqL5uRO."/cc!.<rnglR!m5S<eZF&5%BcG]=/G.@!`8pIc,&V\qt=G5)<Q)UC'$4Ze-.oL>3^i]3,<<0.Yn`:/Nraj%9F0QgY49G6]8gs-E<4\Q^$*EheHFuE0[+);mDn(64Ia'`@3cG.HjdD$BD=HR`ZYG_/\9@3Xb6p$oj@Mi[>bYSG+*630`[?TSj&s3??R]OPST/';!T2*Y.3U(D6Z+j%0A%Sj]>E@-$'1K+Oc*Ka;[HSu-rhr]!WMg[8".JdL\12<_OTZA)'*H^LNq0W:esj6>cg_[J?njLn""ro"sVYU@8F1jcS;^oa)-*Vqj4NT:9gcuj,?/Rc4In"c5!7I:7$b1?W@R1m85O&Uk%(*A6R:s$HIEg1.-#Chtf)Z0`Q-/&\m^QHLkgp3-IgBG2P-u`.=3QQp6i2M<faY,=_/L=XC?u>dpTP)^Ke&rPL[b5R7qA;/DIc!H;1.rP,DgPZ#jUJ/NKf+mi_XPD(GS9-na^sP?o5)Y+)>gk!Sd!"?YNeaW8+*8_A+a1W/&ZB4`5b,^X57t;j,0L.hJ1*neO-#s3Gs:7TJkdh:Vk+me_PJE_]-T^CTH^CXlepRD6^u;*fFjuXFbe4hg'JS$r^Z8mraHf^3VmbT$u8c+#ZA"0(dd=lXJ7!$s*PoO]6(>2dgB"\]uf7=`"C<Bo@]-eqs(o7e7b]dFCVU#%&Mgm+Y=<qfFqm`rE`6fl*;TdblNY<;e6-X%1UZ2R$<,#IOMWBA+ebYNI'`h,(Pc?lD\g.^!Oe`5IAe2#8j6frMCSBJmX0pVgDTf8e%WSBLT>q8'^`ZL."j7c;?>9NRL(b.j6AR.jYa'8/>HT$s^`,;4KQ,TZdb+q'hb~>
+endstream
+endobj
+xref
+0 16
+0000000000 65535 f 
+0000000015 00000 n 
+0000000367 00000 n 
+0000000440 00000 n 
+0000000489 00000 n 
+0000000745 00000 n 
+0000005573 00000 n 
+0000005680 00000 n 
+0000005787 00000 n 
+0000005899 00000 n 
+0000006004 00000 n 
+0000006110 00000 n 
+0000006302 00000 n 
+0000008564 00000 n 
+0000008617 00000 n 
+0000008809 00000 n 
+trailer
+<<
+/Size 16
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+10974
+%%EOF
